@@ -42,7 +42,7 @@ RSpec.describe SidekiqAdhocJob::Utils::ClassInspector do
     end
   end
 
-  context 'with an inherited class without redefining method' do
+  context "with an inherited class without redefining method" do
     before do
       stub_const("TempWorker", Class.new(SidekiqAdhocJob::Test::DummyWorker))
     end
